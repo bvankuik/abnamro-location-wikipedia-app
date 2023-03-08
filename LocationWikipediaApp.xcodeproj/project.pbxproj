@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527C29B8934B001CA8DF /* AppDelegate.swift */; };
+		89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527E29B8934B001CA8DF /* SceneDelegate.swift */; };
+		89CF528129B8934B001CA8DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF528029B8934B001CA8DF /* ViewController.swift */; };
+		89CF528429B8934B001CA8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528229B8934B001CA8DF /* Main.storyboard */; };
+		89CF528629B8934C001CA8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528529B8934C001CA8DF /* Assets.xcassets */; };
+		89CF528929B8934C001CA8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */; };
+		89CF529429B8934D001CA8DF /* LocationWikipediaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */; };
+		89CF529E29B8934D001CA8DF /* LocationWikipediaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529D29B8934D001CA8DF /* LocationWikipediaAppUITests.swift */; };
+		89CF52A029B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89CF529029B8934D001CA8DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89CF527129B8934B001CA8DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89CF527829B8934B001CA8DF;
+			remoteInfo = LocationWikipediaApp;
+		};
+		89CF529A29B8934D001CA8DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89CF527129B8934B001CA8DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89CF527829B8934B001CA8DF;
+			remoteInfo = LocationWikipediaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89CF527929B8934B001CA8DF /* LocationWikipediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationWikipediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CF527C29B8934B001CA8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89CF527E29B8934B001CA8DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89CF528029B8934B001CA8DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89CF528329B8934B001CA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89CF528529B8934C001CA8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89CF528829B8934C001CA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89CF528A29B8934C001CA8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CF528F29B8934D001CA8DF /* LocationWikipediaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationWikipediaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWikipediaAppTests.swift; sourceTree = "<group>"; };
+		89CF529929B8934D001CA8DF /* LocationWikipediaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationWikipediaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CF529D29B8934D001CA8DF /* LocationWikipediaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWikipediaAppUITests.swift; sourceTree = "<group>"; };
+		89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWikipediaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89CF527629B8934B001CA8DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF528C29B8934D001CA8DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF529629B8934D001CA8DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89CF527029B8934B001CA8DF = {
+			isa = PBXGroup;
+			children = (
+				89CF527B29B8934B001CA8DF /* LocationWikipediaApp */,
+				89CF529229B8934D001CA8DF /* LocationWikipediaAppTests */,
+				89CF529C29B8934D001CA8DF /* LocationWikipediaAppUITests */,
+				89CF527A29B8934B001CA8DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89CF527A29B8934B001CA8DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89CF527929B8934B001CA8DF /* LocationWikipediaApp.app */,
+				89CF528F29B8934D001CA8DF /* LocationWikipediaAppTests.xctest */,
+				89CF529929B8934D001CA8DF /* LocationWikipediaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89CF527B29B8934B001CA8DF /* LocationWikipediaApp */ = {
+			isa = PBXGroup;
+			children = (
+				89CF527C29B8934B001CA8DF /* AppDelegate.swift */,
+				89CF527E29B8934B001CA8DF /* SceneDelegate.swift */,
+				89CF528029B8934B001CA8DF /* ViewController.swift */,
+				89CF528229B8934B001CA8DF /* Main.storyboard */,
+				89CF528529B8934C001CA8DF /* Assets.xcassets */,
+				89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */,
+				89CF528A29B8934C001CA8DF /* Info.plist */,
+			);
+			path = LocationWikipediaApp;
+			sourceTree = "<group>";
+		};
+		89CF529229B8934D001CA8DF /* LocationWikipediaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */,
+			);
+			path = LocationWikipediaAppTests;
+			sourceTree = "<group>";
+		};
+		89CF529C29B8934D001CA8DF /* LocationWikipediaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89CF529D29B8934D001CA8DF /* LocationWikipediaAppUITests.swift */,
+				89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */,
+			);
+			path = LocationWikipediaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89CF527829B8934B001CA8DF /* LocationWikipediaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CF52A329B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaApp" */;
+			buildPhases = (
+				89CF527529B8934B001CA8DF /* Sources */,
+				89CF527629B8934B001CA8DF /* Frameworks */,
+				89CF527729B8934B001CA8DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationWikipediaApp;
+			productName = LocationWikipediaApp;
+			productReference = 89CF527929B8934B001CA8DF /* LocationWikipediaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89CF528E29B8934D001CA8DF /* LocationWikipediaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CF52A629B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaAppTests" */;
+			buildPhases = (
+				89CF528B29B8934D001CA8DF /* Sources */,
+				89CF528C29B8934D001CA8DF /* Frameworks */,
+				89CF528D29B8934D001CA8DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89CF529129B8934D001CA8DF /* PBXTargetDependency */,
+			);
+			name = LocationWikipediaAppTests;
+			productName = LocationWikipediaAppTests;
+			productReference = 89CF528F29B8934D001CA8DF /* LocationWikipediaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89CF529829B8934D001CA8DF /* LocationWikipediaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CF52A929B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaAppUITests" */;
+			buildPhases = (
+				89CF529529B8934D001CA8DF /* Sources */,
+				89CF529629B8934D001CA8DF /* Frameworks */,
+				89CF529729B8934D001CA8DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89CF529B29B8934D001CA8DF /* PBXTargetDependency */,
+			);
+			name = LocationWikipediaAppUITests;
+			productName = LocationWikipediaAppUITests;
+			productReference = 89CF529929B8934D001CA8DF /* LocationWikipediaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89CF527129B8934B001CA8DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					89CF527829B8934B001CA8DF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					89CF528E29B8934D001CA8DF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89CF527829B8934B001CA8DF;
+					};
+					89CF529829B8934D001CA8DF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89CF527829B8934B001CA8DF;
+					};
+				};
+			};
+			buildConfigurationList = 89CF527429B8934B001CA8DF /* Build configuration list for PBXProject "LocationWikipediaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89CF527029B8934B001CA8DF;
+			productRefGroup = 89CF527A29B8934B001CA8DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89CF527829B8934B001CA8DF /* LocationWikipediaApp */,
+				89CF528E29B8934D001CA8DF /* LocationWikipediaAppTests */,
+				89CF529829B8934D001CA8DF /* LocationWikipediaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89CF527729B8934B001CA8DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF528929B8934C001CA8DF /* LaunchScreen.storyboard in Resources */,
+				89CF528629B8934C001CA8DF /* Assets.xcassets in Resources */,
+				89CF528429B8934B001CA8DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF528D29B8934D001CA8DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF529729B8934D001CA8DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89CF527529B8934B001CA8DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF528129B8934B001CA8DF /* ViewController.swift in Sources */,
+				89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */,
+				89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF528B29B8934D001CA8DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF529429B8934D001CA8DF /* LocationWikipediaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CF529529B8934D001CA8DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF529E29B8934D001CA8DF /* LocationWikipediaAppUITests.swift in Sources */,
+				89CF52A029B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89CF529129B8934D001CA8DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89CF527829B8934B001CA8DF /* LocationWikipediaApp */;
+			targetProxy = 89CF529029B8934D001CA8DF /* PBXContainerItemProxy */;
+		};
+		89CF529B29B8934D001CA8DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89CF527829B8934B001CA8DF /* LocationWikipediaApp */;
+			targetProxy = 89CF529A29B8934D001CA8DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89CF528229B8934B001CA8DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89CF528329B8934B001CA8DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89CF528829B8934C001CA8DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89CF52A129B8934D001CA8DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89CF52A229B8934D001CA8DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89CF52A429B8934D001CA8DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationWikipediaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89CF52A529B8934D001CA8DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationWikipediaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89CF52A729B8934D001CA8DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationWikipediaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocationWikipediaApp";
+			};
+			name = Debug;
+		};
+		89CF52A829B8934D001CA8DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationWikipediaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocationWikipediaApp";
+			};
+			name = Release;
+		};
+		89CF52AA29B8934D001CA8DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocationWikipediaApp;
+			};
+			name = Debug;
+		};
+		89CF52AB29B8934D001CA8DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.LocationWikipediaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocationWikipediaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89CF527429B8934B001CA8DF /* Build configuration list for PBXProject "LocationWikipediaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF52A129B8934D001CA8DF /* Debug */,
+				89CF52A229B8934D001CA8DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CF52A329B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF52A429B8934D001CA8DF /* Debug */,
+				89CF52A529B8934D001CA8DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CF52A629B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF52A729B8934D001CA8DF /* Debug */,
+				89CF52A829B8934D001CA8DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CF52A929B8934D001CA8DF /* Build configuration list for PBXNativeTarget "LocationWikipediaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF52AA29B8934D001CA8DF /* Debug */,
+				89CF52AB29B8934D001CA8DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89CF527129B8934B001CA8DF /* Project object */;
+}
