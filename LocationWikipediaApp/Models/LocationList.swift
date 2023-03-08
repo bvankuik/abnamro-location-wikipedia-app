@@ -9,4 +9,6 @@ import Foundation
 
 struct LocationList: Decodable {
     let locations: [Location]
+
+    static let empty = LocationList(locations: [])
 }

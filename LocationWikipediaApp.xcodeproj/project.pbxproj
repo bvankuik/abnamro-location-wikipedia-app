@@ -19,6 +19,9 @@
 		89CF52C529B89B03001CA8DF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52C429B89B03001CA8DF /* Location.swift */; };
 		89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52C629B89B0E001CA8DF /* LocationList.swift */; };
 		89CF52C929B8B266001CA8DF /* mock_locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 89CF52C829B8B266001CA8DF /* mock_locations.json */; };
+		89CF52CD29B8B75A001CA8DF /* LocationListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52CC29B8B75A001CA8DF /* LocationListService.swift */; };
+		89CF52CF29B8B9A4001CA8DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52CE29B8B9A4001CA8DF /* Constants.swift */; };
+		89CF52D129B8BA94001CA8DF /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52D029B8BA94001CA8DF /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		89CF52C429B89B03001CA8DF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		89CF52C629B89B0E001CA8DF /* LocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		89CF52C829B8B266001CA8DF /* mock_locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_locations.json; sourceTree = "<group>"; };
+		89CF52CC29B8B75A001CA8DF /* LocationListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListService.swift; sourceTree = "<group>"; };
+		89CF52CE29B8B9A4001CA8DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89CF52D029B8BA94001CA8DF /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		89CF527B29B8934B001CA8DF /* LocationWikipediaApp */ = {
 			isa = PBXGroup;
 			children = (
+				89CF52CB29B8B73B001CA8DF /* Services */,
 				89CF52CA29B8B706001CA8DF /* Models */,
 				89CF527C29B8934B001CA8DF /* AppDelegate.swift */,
 				89CF527E29B8934B001CA8DF /* SceneDelegate.swift */,
@@ -113,6 +120,7 @@
 				89CF528529B8934C001CA8DF /* Assets.xcassets */,
 				89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */,
 				89CF528A29B8934C001CA8DF /* Info.plist */,
+				89CF52CE29B8B9A4001CA8DF /* Constants.swift */,
 			);
 			path = LocationWikipediaApp;
 			sourceTree = "<group>";
@@ -142,6 +150,15 @@
 				89CF52C629B89B0E001CA8DF /* LocationList.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		89CF52CB29B8B73B001CA8DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				89CF52D029B8BA94001CA8DF /* ServiceError.swift */,
+				89CF52CC29B8B75A001CA8DF /* LocationListService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,10 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF52D129B8BA94001CA8DF /* ServiceError.swift in Sources */,
 				89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */,
 				89CF528129B8934B001CA8DF /* ViewController.swift in Sources */,
 				89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */,
 				89CF52C529B89B03001CA8DF /* Location.swift in Sources */,
+				89CF52CF29B8B9A4001CA8DF /* Constants.swift in Sources */,
+				89CF52CD29B8B75A001CA8DF /* LocationListService.swift in Sources */,
 				89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

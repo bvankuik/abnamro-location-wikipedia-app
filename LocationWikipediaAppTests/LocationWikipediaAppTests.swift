@@ -22,4 +22,22 @@ final class LocationWikipediaAppTests: XCTestCase {
         XCTAssert(locationList.locations.count == 8)
         XCTAssertNil(locationList.locations.last!.name)
     }
+
+    func testLocationListService() async {
+        switch LocationListService.shared.mode {
+        case let .success(list):
+            XCTAssert(list.locations.isEmpty)
+        default:
+            XCTFail("Service was not configured correctly")
+        }
+
+        await LocationListService.shared.refresh()
+
+        switch LocationListService.shared.mode {
+        case let .success(list):
+            XCTAssert(!list.locations.isEmpty)
+        default:
+            XCTFail("Service has unexpected status")
+        }
+    }
 }
