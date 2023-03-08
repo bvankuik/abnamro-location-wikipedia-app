@@ -16,6 +16,9 @@
 		89CF529429B8934D001CA8DF /* LocationWikipediaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */; };
 		89CF529E29B8934D001CA8DF /* LocationWikipediaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529D29B8934D001CA8DF /* LocationWikipediaAppUITests.swift */; };
 		89CF52A029B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */; };
+		89CF52C529B89B03001CA8DF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52C429B89B03001CA8DF /* Location.swift */; };
+		89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52C629B89B0E001CA8DF /* LocationList.swift */; };
+		89CF52C929B8B266001CA8DF /* mock_locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 89CF52C829B8B266001CA8DF /* mock_locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		89CF529929B8934D001CA8DF /* LocationWikipediaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationWikipediaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF529D29B8934D001CA8DF /* LocationWikipediaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWikipediaAppUITests.swift; sourceTree = "<group>"; };
 		89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWikipediaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89CF52C429B89B03001CA8DF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		89CF52C629B89B0E001CA8DF /* LocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
+		89CF52C829B8B266001CA8DF /* mock_locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_locations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		89CF527B29B8934B001CA8DF /* LocationWikipediaApp */ = {
 			isa = PBXGroup;
 			children = (
+				89CF52CA29B8B706001CA8DF /* Models */,
 				89CF527C29B8934B001CA8DF /* AppDelegate.swift */,
 				89CF527E29B8934B001CA8DF /* SceneDelegate.swift */,
 				89CF528029B8934B001CA8DF /* ViewController.swift */,
@@ -113,6 +120,7 @@
 		89CF529229B8934D001CA8DF /* LocationWikipediaAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				89CF52C829B8B266001CA8DF /* mock_locations.json */,
 				89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */,
 			);
 			path = LocationWikipediaAppTests;
@@ -125,6 +133,15 @@
 				89CF529F29B8934D001CA8DF /* LocationWikipediaAppUITestsLaunchTests.swift */,
 			);
 			path = LocationWikipediaAppUITests;
+			sourceTree = "<group>";
+		};
+		89CF52CA29B8B706001CA8DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89CF52C429B89B03001CA8DF /* Location.swift */,
+				89CF52C629B89B0E001CA8DF /* LocationList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF52C929B8B266001CA8DF /* mock_locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */,
 				89CF528129B8934B001CA8DF /* ViewController.swift in Sources */,
 				89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */,
+				89CF52C529B89B03001CA8DF /* Location.swift in Sources */,
 				89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,43 @@
+{
+    "locations": [
+        {
+            "name": "Somewhere near the east coast of Florida",
+            "lat": 28,
+            "long": 80
+        },
+        {
+            "name": "Cape Canaveral",
+            "lat": 28.5,
+            "long": 80.6
+        },
+        {
+            "name": "Kennedy Space Center Visitor Complex",
+            "lat": 28.52,
+            "long": 80.68
+        },
+        {
+            "name": "The Rocket Garden at the Kennedy Space Center",
+            "lat": 28.523,
+            "long": 80.683
+        },
+        {
+            "name": "Somewhere near the center of the Rocket Garden",
+            "lat": 28.5234,
+            "long": 80.6830
+        },
+        {
+            "name": "The Thor-Delta rocket in Rocket Garden",
+            "lat": 28.52345,
+            "long": 80.68309
+        },
+        {
+            "name": "Presumably the very tip of the rocket",
+            "lat": 28.5234571,
+            "long": 80.6830941
+        },
+        {
+            "lat": 28.523457182,
+            "long": 80.683094159
+        }
+    ]
+}
