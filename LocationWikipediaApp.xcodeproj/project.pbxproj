@@ -10,7 +10,6 @@
 		89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527C29B8934B001CA8DF /* AppDelegate.swift */; };
 		89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527E29B8934B001CA8DF /* SceneDelegate.swift */; };
 		89CF528129B8934B001CA8DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF528029B8934B001CA8DF /* ViewController.swift */; };
-		89CF528429B8934B001CA8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528229B8934B001CA8DF /* Main.storyboard */; };
 		89CF528629B8934C001CA8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528529B8934C001CA8DF /* Assets.xcassets */; };
 		89CF528929B8934C001CA8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */; };
 		89CF529429B8934D001CA8DF /* LocationWikipediaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF529329B8934D001CA8DF /* LocationWikipediaAppTests.swift */; };
@@ -22,6 +21,7 @@
 		89CF52CD29B8B75A001CA8DF /* LocationListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52CC29B8B75A001CA8DF /* LocationListService.swift */; };
 		89CF52CF29B8B9A4001CA8DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52CE29B8B9A4001CA8DF /* Constants.swift */; };
 		89CF52D129B8BA94001CA8DF /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52D029B8BA94001CA8DF /* ServiceError.swift */; };
+		89CF52D329B8CED9001CA8DF /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF52D229B8CED9001CA8DF /* LocationListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		89CF527C29B8934B001CA8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CF527E29B8934B001CA8DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89CF528029B8934B001CA8DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		89CF528329B8934B001CA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89CF528529B8934C001CA8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89CF528829B8934C001CA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CF528A29B8934C001CA8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		89CF52CC29B8B75A001CA8DF /* LocationListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListService.swift; sourceTree = "<group>"; };
 		89CF52CE29B8B9A4001CA8DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89CF52D029B8BA94001CA8DF /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		89CF52D229B8CED9001CA8DF /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +111,12 @@
 		89CF527B29B8934B001CA8DF /* LocationWikipediaApp */ = {
 			isa = PBXGroup;
 			children = (
-				89CF52CB29B8B73B001CA8DF /* Services */,
 				89CF52CA29B8B706001CA8DF /* Models */,
+				89CF52CB29B8B73B001CA8DF /* Services */,
+				89CF52D429B8CEF1001CA8DF /* ViewControllers */,
 				89CF527C29B8934B001CA8DF /* AppDelegate.swift */,
 				89CF527E29B8934B001CA8DF /* SceneDelegate.swift */,
 				89CF528029B8934B001CA8DF /* ViewController.swift */,
-				89CF528229B8934B001CA8DF /* Main.storyboard */,
 				89CF528529B8934C001CA8DF /* Assets.xcassets */,
 				89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */,
 				89CF528A29B8934C001CA8DF /* Info.plist */,
@@ -159,6 +159,14 @@
 				89CF52CC29B8B75A001CA8DF /* LocationListService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		89CF52D429B8CEF1001CA8DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89CF52D229B8CED9001CA8DF /* LocationListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +278,6 @@
 			files = (
 				89CF528929B8934C001CA8DF /* LaunchScreen.storyboard in Resources */,
 				89CF528629B8934C001CA8DF /* Assets.xcassets in Resources */,
-				89CF528429B8934B001CA8DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CF52D129B8BA94001CA8DF /* ServiceError.swift in Sources */,
+				89CF52D329B8CED9001CA8DF /* LocationListViewController.swift in Sources */,
 				89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */,
 				89CF528129B8934B001CA8DF /* ViewController.swift in Sources */,
 				89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */,
@@ -396,14 +404,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		89CF528229B8934B001CA8DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89CF528329B8934B001CA8DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		89CF528729B8934C001CA8DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -540,7 +540,6 @@
 				INFOPLIST_FILE = LocationWikipediaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -567,7 +566,6 @@
 				INFOPLIST_FILE = LocationWikipediaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
