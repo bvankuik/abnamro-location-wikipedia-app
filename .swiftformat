@@ -1,3 +1,4 @@
 --swiftversion 5
 --maxwidth 120
 --disable wrapMultilineStatementBraces
+--commas inline

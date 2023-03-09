@@ -8,7 +8,7 @@
 import Foundation
 import OSLog
 
-class LocationListService {
+@MainActor class LocationListService {
     enum Mode {
         case loading, success(LocationList), error(String)
     }
