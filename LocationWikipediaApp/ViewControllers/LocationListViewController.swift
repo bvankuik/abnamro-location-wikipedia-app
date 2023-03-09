@@ -9,7 +9,7 @@ import OSLog
 import UIKit
 
 class LocationListViewController: UIViewController {
-    private static let cellIdentifier = "LocationListTableViewCell"
+    static let cellIdentifier = "LocationListTableViewCell"
     private let tableView = UITableView()
     private let spinner = UIActivityIndicatorView(style: .large)
 
@@ -18,8 +18,8 @@ class LocationListViewController: UIViewController {
 
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Self.cellIdentifier)
-        tableView.allowsSelection = false
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refreshControlAction), for: .valueChanged)
 
@@ -70,28 +70,5 @@ class LocationListViewController: UIViewController {
             spinner.stopAnimating()
             tableView.refreshControl?.endRefreshing()
         }
-    }
-}
-
-extension LocationListViewController: UITableViewDataSource {
-    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        guard case let .success(locationList) = LocationListService.shared.mode else {
-            return 0
-        }
-        return locationList.locations.count
-    }
-
-    func numberOfSections(in _: UITableView) -> Int {
-        return 1
-    }
-
-    func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard case let .success(locationList) = LocationListService.shared.mode else {
-            return UITableViewCell(style: .default, reuseIdentifier: nil)
-        }
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: Self.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = locationList.locations[indexPath.row].name ?? "(Unknown location)"
-        return cell
     }
 }

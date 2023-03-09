@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8988667929B9DEA9006DB554 /* LocationListViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988667829B9DEA9006DB554 /* LocationListViewController+UITableViewDataSource.swift */; };
+		8988667B29B9DECC006DB554 /* LocationListViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988667A29B9DECC006DB554 /* LocationListViewController+UITableViewDelegate.swift */; };
 		89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527C29B8934B001CA8DF /* AppDelegate.swift */; };
 		89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF527E29B8934B001CA8DF /* SceneDelegate.swift */; };
 		89CF528629B8934C001CA8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CF528529B8934C001CA8DF /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8988667829B9DEA9006DB554 /* LocationListViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationListViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		8988667A29B9DECC006DB554 /* LocationListViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationListViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		89CF527929B8934B001CA8DF /* LocationWikipediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationWikipediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF527C29B8934B001CA8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CF527E29B8934B001CA8DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				89CF52D229B8CED9001CA8DF /* LocationListViewController.swift */,
+				8988667829B9DEA9006DB554 /* LocationListViewController+UITableViewDataSource.swift */,
+				8988667A29B9DECC006DB554 /* LocationListViewController+UITableViewDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -360,10 +366,12 @@
 				89CF52D329B8CED9001CA8DF /* LocationListViewController.swift in Sources */,
 				89CF52C729B89B0E001CA8DF /* LocationList.swift in Sources */,
 				89CF527D29B8934B001CA8DF /* AppDelegate.swift in Sources */,
+				8988667B29B9DECC006DB554 /* LocationListViewController+UITableViewDelegate.swift in Sources */,
 				89CF52C529B89B03001CA8DF /* Location.swift in Sources */,
 				89CF52CF29B8B9A4001CA8DF /* Constants.swift in Sources */,
 				89CF52CD29B8B75A001CA8DF /* LocationListService.swift in Sources */,
 				89CF527F29B8934B001CA8DF /* SceneDelegate.swift in Sources */,
+				8988667929B9DEA9006DB554 /* LocationListViewController+UITableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

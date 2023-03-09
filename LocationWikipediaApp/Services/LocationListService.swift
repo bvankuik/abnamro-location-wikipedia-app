@@ -19,7 +19,6 @@ import OSLog
     func refresh() async {
         do {
             mode = .loading
-            try await Task.sleep(for: .seconds(3))
             let locationList = try await request()
             mode = .success(locationList)
         } catch let ServiceError.failed(message) {
