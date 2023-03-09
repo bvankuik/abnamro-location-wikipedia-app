@@ -20,6 +20,8 @@ class LocationListViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Self.cellIdentifier)
         tableView.allowsSelection = false
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(refreshControlAction), for: .valueChanged)
 
         spinner.translatesAutoresizingMaskIntoConstraints = false
         spinner.hidesWhenStopped = true
@@ -44,22 +46,29 @@ class LocationListViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Task {
-            spinner.startAnimating()
-            await LocationListService.shared.refresh()
-            refreshView()
-        }
+        spinner.startAnimating()
+        refreshData()
     }
 
-    private func refreshView() {
-        switch LocationListService.shared.mode {
-        case .loading:
-            spinner.startAnimating()
-        case .success:
+    @objc private func refreshControlAction() {
+        refreshData()
+    }
+
+    private func refreshData() {
+        Task {
+            await LocationListService.shared.refresh()
+            switch LocationListService.shared.mode {
+            case .success:
+                tableView.reloadData()
+            case let .error(message):
+                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(alert, animated: true, completion: nil)
+            default:
+                break
+            }
             spinner.stopAnimating()
-            tableView.reloadData()
-        case .error:
-            spinner.stopAnimating()
+            tableView.refreshControl?.endRefreshing()
         }
     }
 }
