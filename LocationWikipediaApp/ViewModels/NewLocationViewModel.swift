@@ -18,6 +18,6 @@ struct NewLocationViewModel {
     }
 
     var location: Location {
-        Location(name: nil, lat: coordinate.latitude, long: coordinate.longitude)
+        Location(name: nil, coordinate: coordinate)
     }
 }

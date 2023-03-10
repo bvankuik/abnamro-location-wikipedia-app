@@ -9,10 +9,7 @@ import UIKit
 
 extension LocationListViewController: UITableViewDataSource {
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        guard case let .success(locationList) = LocationListService.shared.mode else {
-            return 0
-        }
-        return locationList.locations.count
+        return viewModel.locations.count
     }
 
     func numberOfSections(in _: UITableView) -> Int {
@@ -20,12 +17,8 @@ extension LocationListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard case let .success(locationList) = LocationListService.shared.mode else {
-            return UITableViewCell(style: .default, reuseIdentifier: nil)
-        }
-
         let cell = tableView.dequeueReusableCell(withIdentifier: Self.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = locationList.locations[indexPath.row].name ?? "(Unknown location)"
+        cell.textLabel?.text = viewModel.locations[indexPath.row].name ?? "(Unknown location)"
         return cell
     }
 }

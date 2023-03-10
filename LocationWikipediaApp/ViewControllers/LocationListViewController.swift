@@ -12,6 +12,7 @@ class LocationListViewController: UIViewController {
     static let cellIdentifier = "LocationListTableViewCell"
     private let tableView = UITableView()
     private let spinner = UIActivityIndicatorView(style: .large)
+    var viewModel = LocationListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +64,8 @@ class LocationListViewController: UIViewController {
         Task {
             await LocationListService.shared.refresh()
             switch LocationListService.shared.mode {
-            case .success:
+            case let .success(locationList):
+                viewModel.locations = locationList.locations
                 tableView.reloadData()
             case let .error(message):
                 let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
