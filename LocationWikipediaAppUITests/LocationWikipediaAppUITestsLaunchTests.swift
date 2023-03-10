@@ -16,16 +16,27 @@ final class LocationWikipediaAppUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testLaunch() throws {
+    func testSearch() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
-
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
+        app.navigationBars["Locations"].buttons["Search"].tap()
+        
+        let latitudeAsDecimalNumberTextField = app.textFields["Latitude as decimal number"]
+        latitudeAsDecimalNumberTextField.tap()
+        latitudeAsDecimalNumberTextField.typeText("5")
+        
+        let longitudeAsDecimalNumberTextField = app.textFields["Longitude as decimal number"]
+        longitudeAsDecimalNumberTextField.tap()
+        longitudeAsDecimalNumberTextField.typeText("2")
+        
+        app.staticTexts["Go to location"].tap()
+    }
+    
+    func testTable() throws {
+        let app = XCUIApplication()
+        app.launch()
+        let cell = app.tables.cells.firstMatch
+        XCTAssertTrue(cell.waitForExistence(timeout: 10))
+        cell.tap()
     }
 }

@@ -24,7 +24,7 @@ final class LocationWikipediaAppTests: XCTestCase {
     }
 
     func testLocationListService() async {
-        switch LocationListService.shared.mode {
+        switch await LocationListService.shared.mode {
         case let .success(list):
             XCTAssert(list.locations.isEmpty)
         default:
@@ -33,7 +33,7 @@ final class LocationWikipediaAppTests: XCTestCase {
 
         await LocationListService.shared.refresh()
 
-        switch LocationListService.shared.mode {
+        switch await LocationListService.shared.mode {
         case let .success(list):
             XCTAssert(!list.locations.isEmpty)
         default:
