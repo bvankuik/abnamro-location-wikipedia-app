@@ -19,24 +19,6 @@ extension LocationListViewController: UITableViewDelegate {
 
         let location = locationList.locations[indexPath.row]
         os_log("Tapped row  %d with location name ", log: .default, type: .debug, location.name ?? "nil")
-
-        var components = URLComponents()
-        components.scheme = Constants.wikipediaURLScheme
-        components.host = "places"
-        components.queryItems = [
-            URLQueryItem(name: "latitude", value: String(format: "%f", location.lat)),
-            URLQueryItem(name: "longitude", value: String(format: "%f", location.long))
-        ]
-
-        guard let url = components.url else {
-            os_log("Could not contstruct Wikipedia URL", log: .default, type: .error)
-            return
-        }
-        if UIApplication.shared.canOpenURL(url) {
-            os_log("Opening URL %@", log: .default, type: .debug, url.absoluteString)
-            UIApplication.shared.open(url)
-        } else {
-            os_log("Failed to open URL %@", log: .default, type: .debug, url.absoluteString)
-        }
+        location.open()
     }
 }

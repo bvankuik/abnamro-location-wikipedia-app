@@ -42,6 +42,11 @@ class LocationListViewController: UIViewController {
 
         view.backgroundColor = UIColor.systemBackground
         title = "Locations"
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .search, primaryAction: UIAction { _ in
+            let navigationController = UINavigationController(rootViewController: NewLocationViewController())
+            self.present(navigationController, animated: true)
+        })
     }
 
     override func viewDidAppear(_ animated: Bool) {
