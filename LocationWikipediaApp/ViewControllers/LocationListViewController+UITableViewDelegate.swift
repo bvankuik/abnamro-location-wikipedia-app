@@ -17,20 +17,15 @@ extension LocationListViewController: UITableViewDelegate {
             return
         }
 
-        guard let locationName = locationList.locations[indexPath.row].name else {
-            os_log("Tapped row  %d but location was nil", log: .default, type: .debug, indexPath.row)
-            return
-        }
-
-        os_log("Tapped row  %d with location name ", log: .default, type: .debug, locationName)
-
-        let articleURLString = Constants.wikipediaArticleURLString + locationName
+        let location = locationList.locations[indexPath.row]
+        os_log("Tapped row  %d with location name ", log: .default, type: .debug, location.name ?? "nil")
 
         var components = URLComponents()
         components.scheme = Constants.wikipediaURLScheme
         components.host = "places"
         components.queryItems = [
-            URLQueryItem(name: "WMFArticleURL", value: articleURLString)
+            URLQueryItem(name: "latitude", value: String(format: "%f", location.lat)),
+            URLQueryItem(name: "longitude", value: String(format: "%f", location.long))
         ]
 
         guard let url = components.url else {
